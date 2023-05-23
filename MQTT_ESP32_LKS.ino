@@ -7,10 +7,10 @@ const char* ssid = "SERVER 00";
 const char* password = "Bismillah99";
 
 // Konfigurasi MQTT
-const char* mqtt_server = "35.86.171.0";
+const char* mqtt_server = "lks-lb-mqtt-f071edf25e40c274.elb.us-west-2.amazonaws.com";
 const int mqtt_port = 1883;
-const char* mqtt_username = "pradana";
-const char* mqtt_password = "123456";
+const char* mqtt_username = "ardhan";
+const char* mqtt_password = "ardhan123";
 const char* mqtt_topic = "rumah/dht22";
 
 // Konfigurasi DHT
