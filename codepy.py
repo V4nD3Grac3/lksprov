@@ -4,20 +4,20 @@ import paho.mqtt.client as mqtt
 from datetime import datetime
 from decimal import Decimal
 
-mqtt_broker = 'XXXXXXX'  # Alamat broker MQTT
+mqtt_broker = 'mqtt://lks-lb-mqtt-f071edf25e40c274.elb.us-west-2.amazonaws.com'  # Alamat broker MQTT
 mqtt_port = 1883  # Port broker MQTT
 mqtt_topic = 'rumah/+'  # Topik MQTT, menggunakan wildcard '+' untuk menerima semua subtopik yang dimulai dengan 'rumah/'
 
-aws_access_key = 'XXXXXXXXXXXXXX'  # Kunci akses AWS Anda
-aws_secret_key = 'XXXXXXXXXXXXXXXXXX'  # Kunci rahasia AWS Anda
-s3_bucket = 'XXXXXXXXXXXXXXXXXX'  # Nama bucket AWS S3
+aws_access_key = 'AKIA4ETX7JVR3GGKQTB7'  # Kunci akses AWS Anda
+aws_secret_key = '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'  # Kunci rahasia AWS Anda
+s3_bucket = 'bucketlks-23'  # Nama bucket AWS S3
 s3_region = 'us-west-2'  # Wilayah bucket S3
 
-dynamodb_table = 'XXXXXXXXXXX'  # Nama tabel DynamoDB
-dynamodb_region = 'us-east-1'  # Wilayah tabel DynamoDB
+dynamodb_table = 'dynamodb_23'  # Nama tabel DynamoDB
+dynamodb_region = 'us-west-2'  # Wilayah tabel DynamoDB
 
-mqtt_username = 'XXXXXXXXX'  # Username MQTT
-mqtt_password = 'XXXXXXXXX'  # Password MQTT
+mqtt_username = 'ardhan'  # Username MQTT
+mqtt_password = 'ardhan123'  # Password MQTT
 
 def on_connect(client, userdata, flags, rc):
     print('Terhubung dengan broker MQTT')
